@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-echo -e "$H2 Remetente:$RS"
+echo -e "$H2 sender:$RS"
 read -p " " MAILR;
 echo " "
-echo -e "$H2 Destinatário:$RS"
+echo -e "$H2 recipient:$RS"
 read -p " " MAILD;
 
 echo "TesteHDBR" | exim -r "$MAILR" -v -odf "$MAILD"
