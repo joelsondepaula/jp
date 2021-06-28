@@ -7,4 +7,4 @@ echo " "
 echo -e "$H2 Destinatário:$RS"
 read -p " " value2;
 
-echo "TesteHDBR" | exim -r value1 -v -odf value2
+echo "TesteHDBR" | exim -r "$value1" -v -odf "$value2"
