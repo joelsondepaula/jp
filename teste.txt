@@ -1,1 +1,10 @@
-ll
+#!/bin/bash
+
+
+echo -e "$H2 Remetente:$RS"
+read -p " " value1;
+echo " "
+echo -e "$H2 Destinatário:$RS"
+read -p " " value2;
+
+echo "TesteHDBR" | exim -r value1 -v -odf value2
