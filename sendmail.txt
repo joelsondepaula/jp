@@ -2,9 +2,9 @@
 
 
 echo -e "$H2 Remetente:$RS"
-read -p " " value1;
+read -p " " MAILR;
 echo " "
 echo -e "$H2 Destinatário:$RS"
-read -p " " value2;
+read -p " " MAILD;
 
-echo "TesteHDBR" | exim -r "$value1" -v -odf "$value2"
+echo "TesteHDBR" | exim -r "$MAILR" -v -odf "$MAILD"
