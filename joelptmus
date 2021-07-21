@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#Limpa a tela
+clear;
+
+#. Altera o idioma da sessão para inglês .#
+LANG=C
+export LANG
+
+#Função principal, listar todas as funções disponíveis
+
+
+#mudar senha e-mail
+function changemail_password(){
+user=${1}
+domain=$(echo $user | cut -d@ -f2)
+domain_verify
+account=$(grep $domain /etc/trueuserdomains | cut -d: -f2 | head -1 | sed 's/ //g')
+mail_verify
