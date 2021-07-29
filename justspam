@@ -7,4 +7,4 @@ echo -e "$H2 Subject:$RS"
 read -p " " SUB;
 
 echo -e "Subject: $SUB" | exim -r root@$HOSTNAME -v -odf "$MAILR"
-
+ 
