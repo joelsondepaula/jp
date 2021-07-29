@@ -7,9 +7,9 @@ DOMINIO=$(egrep $USUARIO /etc/trueuserdomains | cut -d: -f1 | tail -1)
 uapi --user=$USUARIO Email add_pop email=hdteste password=AdQ9p-mC84567 quota=0 domain=$DOMINIO skip_update_db=1
 
 
-echo -e "$H2 Sender:$RS"
-read -p " " MAILS;
-echo " "
+#echo -e "$H2 Sender:$RS"
+#read -p " " MAILS;
+#echo " "
 
 echo -e "$H2 Recipient:$RS"
 read -p " " MAILR;
@@ -17,7 +17,7 @@ echo " "
 echo -e "$H2 Subject:$RS"
 read -p " " SUB;
 
-echo -e "Subject: $SUB" | exim -r "$MAILS" -v -odf "$MAILR"
+echo -e "Subject: $SUB" | exim -r testehd@$DOMINIO -v -odf "$MAILR"
 
 
 
