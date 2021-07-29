@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-#echo -e "$H2 Account:$RS"
-#read -p " " ACC;
+#echo -e "$H2 Sender:$RS"
+#read -p " " MAILS;
 #echo " "
 
 case $1 in
