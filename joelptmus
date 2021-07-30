@@ -15,7 +15,7 @@ CHANGELOG
 function supas (){
 echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" 
 
-}
+;}
 
 supas;
 
