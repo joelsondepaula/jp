@@ -1,0 +1,33 @@
+#!/bin/sh
+# Last Update: Jan 09 2020
+
+<< 'CHANGELOG'
+
+1,0 30/07/2021 [ Author: Joelson Salustiano ]
+       * Initial release
+       * Adição das funções:
+       * justspam;
+       * crn;
+    
+CHANGELOG
+
+# Função principal, listar todas as funções disponíveis
+function supas (){
+echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" ;}
+;}
+
+
+#GitHub
+
+#alias ipsaida
+
+function ipsaida(){
+
+IP_DE_SAIDA=$(cat /etc/exim.conf | grep 'interface' | egrep -o "(((1[0-9]|[1-9]?)[0-9]|2([0-4][0-9]|5[0-5]))\.){3}((1[0-9]|[1-9]?)[0-9]|2([0-4][0-9]|5[0-5]))" | head -n 1)
+     if [[ -z $IP_DE_SAIDA ]]; then
+        cat /var/cpanel/mainip && echo -e ""
+     else
+        echo "$IP_DE_SAIDA"
+
+     fi
+}
