@@ -17,11 +17,11 @@ echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n"
 
 }
 
-
+supas;
 
 #GitHub
 
-#alias ipsaida
+
 
 function ipsaida(){
 
