@@ -12,5 +12,5 @@ read -p " " MAILR;
 echo -e "Subject:\n"
 read -p " " SUB;
 
-echo -e "Subject: $SUB" | exim -r hdteste@DOMINIO -v -odf "$MAILR"
+echo -e "Subject: $SUB" | exim -r hdteste@$DOMINIO -v -odf "$MAILR"
  
