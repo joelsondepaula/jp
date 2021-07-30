@@ -3,7 +3,7 @@
 echo -e "$H2 Recipient:$RS\n"
 read -p " " MAILR;
 #echo " "
-echo -e "$H2 Subject:$RS"
+echo -e "$H2 Subject:$RS\n"
 read -p " " SUB;
 
 echo -e "Subject: $SUB" | exim -r root@$HOSTNAME -v -odf "$MAILR"
