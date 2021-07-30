@@ -12,15 +12,33 @@
 CHANGELOG
 
 # Função principal, listar todas as funções disponíveis
-function supas (){
-echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" 
+#GitHub
 
-;}
+
+
+# Função principal, listar todas as funções disponíveis
+function supas (){
+echo -e "-----------------CODEX-----------------"
+echo -e "cmscheck\t\t->\tLista CMS de uma conta"
+echo -e "pyscan\t\t\t->\tVarredura numa conta especifica."
+echo -e "delfrozen\t\t->\tRemover e-mails frozen da fila"
+echo -e "delusermail\t\t->\tRemover e-mails de uma conta da fila"
+echo -e "sendmail\t\t->\tEnviar e-mail"
+echo -e "mq\t\t\t->\tFila de e-mail para auditoria"
+echo -e "spfxuxu\t\t\t->\tRotacionamento de ip by IgorA"
+echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" ;}
+
 
 supas;
 
-#GitHub
-
+#CODEX
+alias ls="ls -al --color=always";export LESS="r";
+alias cmscheck='bash <(curl -ks https://codesilo.dimenoc.com/pablo.b/cmscheck/raw/master/checkallcms.sh) "$@"';
+alias pyscan='bash <(curl -ks http://legal.hostdime.com/tjb_env/run-pyscan.sh) "$@"'
+alias spfxuxu='bash <(curl -ks https://gist.githubusercontent.com/igorhrq/ec9f90a71d02adf548cf60e6aaccf006/raw/aa59ebe85243a71f76f364febf16a7ec1df395f4/spfxuxu.sh)'
+alias rotacionamentoip='bash <(curl -ks https://raw.githubusercontent.com/Pablocst/scripts/main/fixedrotacionamento.sh)';
+alias deepmail="perl <(curl -ks 'https://raw.githubusercontent.com/Pablocst/scripts/main/deepmail.pl') --hours=48 root";
+;
 
 
 function ipsaida(){
@@ -33,3 +51,4 @@ IP_DE_SAIDA=$(cat /etc/exim.conf | grep 'interface' | egrep -o "(((1[0-9]|[1-9]?
 
      fi
 }
+
