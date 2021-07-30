@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo -e "$H2 Recipient:$RS"
+echo -e "$H2 Recipient:$RS\n"
 read -p " " MAILR;
-echo " "
+#echo " "
 echo -e "$H2 Subject:$RS"
 read -p " " SUB;
 
