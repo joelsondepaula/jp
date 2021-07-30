@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo -e "$H2 Recipient:$RS\n"
+echo -e "Recipient:\n"
 read -p " " MAILR;
 #echo " "
-echo -e "$H2 Subject:$RS\n"
+echo -e "Subject:\n"
 read -p " " SUB;
 
 echo -e "Subject: $SUB" | exim -r root@$HOSTNAME -v -odf "$MAILR"
