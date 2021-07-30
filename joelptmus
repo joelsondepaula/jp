@@ -1,20 +1,22 @@
 #!/bin/sh
 # Last Update: Jan 09 2020
 
-#<< 'CHANGELOG'
+<< 'CHANGELOG'
 
-#1,0 30/07/2021 [ Author: Joelson Salustiano ]
-#        * Initial release
-#        * Adição das funções:
-#        * justspam;
-#        * crn;
+1,0 30/07/2021 [ Author: Joelson Salustiano ]
+        * Initial release
+        * Adição das funções:
+        * justspam;
+        * crn;
     
-#CHANGELOG
+CHANGELOG
 
 # Função principal, listar todas as funções disponíveis
 function supas (){
-echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" ;}
-;}
+echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" 
+
+}
+
 
 
 #GitHub
