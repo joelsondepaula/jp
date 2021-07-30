@@ -14,12 +14,12 @@ CHANGELOG
 # Função principal, listar todas as funções disponíveis
 function supas (){
 echo -e "ipsaida\t\t\t->\t Mostra o IP de saída de e-mails\n" ;}
-
-
-
-
 ;}
 
+
+#GitHub
+
+#alias ipsaida
 
 function ipsaida(){
 
