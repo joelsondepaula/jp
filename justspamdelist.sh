@@ -1,7 +1,7 @@
 #!/bin/bash
 RED='\033[0;31m'
 echo -e "================== ${RED} Não há necessidade de escolher um remetente, a mensagem é enviada como root ${NC} ==================="
-echo -e "To:"
+echo -e "Destino:"
 read -p "" MAILR;
 #echo " "
 echo -e "Subject:"
