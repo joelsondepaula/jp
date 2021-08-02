@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #!/bin/bash
-
-echo -e "Recipient:"
+tput setaf 1; echo -e "Não é necessário adicionar remetente"
+echo -e "To:"
 read -p "" MAILR;
 #echo " "
 echo -e "Subject:"
