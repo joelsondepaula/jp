@@ -1,6 +1,4 @@
 #!/bin/bash
-
-#!/bin/bash
 tput setaf 1; echo -e "Não é necessário adicionar remetente"
 echo -e "To:"
 read -p "" MAILR;
