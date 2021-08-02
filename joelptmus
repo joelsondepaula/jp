@@ -28,7 +28,8 @@ echo -e "sendmail\t\t->\tEnviar e-mail"
 echo -e "mq\t\t\t->\tFila de e-mail para auditoria"
 echo -e "spfxuxu\t\t\t->\tRotacionamento de ip by IgorA"
 echo -e "justspam\t\t->\tSolicitar delist no JustSpam via e-mail"
-echo -e "ipsaida\t\t\t->\tMostra o IP de saída de e-mails\n" ;}
+echo -e "ipsaida\t\t\t->\tMostra o IP de saída de e-mails\n" ;
+echo -e "alertroot\t\t\t->\tDesabilita notificações do csf";}
 
 
 supas;
@@ -55,3 +56,8 @@ IP_DE_SAIDA=$(cat /etc/exim.conf | grep 'interface' | egrep -o "(((1[0-9]|[1-9]?
      fi
 }
 
+function alertroot(){
+
+sed -i '/PT_USERPROC/s/"[^>]*"/"0"/g' /etc/csf/csf.conf && sed -i '/PT_USERMEM/s/"[^>]*"/"0"/g' /etc/csf/csf.conf && sed 's/To\: root/To\: devnull/g' -i /etc/csf/alerts/* && echo "/dev/null" >> /root/.forward && csf -r && service exim restart
+
+}
