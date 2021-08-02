@@ -29,7 +29,7 @@ echo -e "mq\t\t\t->\tFila de e-mail para auditoria"
 echo -e "spfxuxu\t\t\t->\tRotacionamento de ip by IgorA"
 echo -e "justspam\t\t->\tSolicitar delist no JustSpam via e-mail"
 echo -e "ipsaida\t\t\t->\tMostra o IP de saída de e-mails\n" ;
-echo -e "alertroot\t\t\t->\tDesabilita notificações do csf";}
+echo -e "alertroot\t\t->\tDesabilita notificações do csf";}
 
 
 supas;
