@@ -30,6 +30,7 @@ echo -e "spfxuxu\t\t\t->\tRotacionamento de ip by IgorA"
 echo -e "justspam\t\t->\tSolicitar delist no JustSpam via e-mail (adicionar destinatário e subject retornados no thunderbird)"
 echo -e "ipsaida\t\t\t->\tMostra o IP de saída de e-mails";
 echo -e "alertroot\t\t->\tDesabilita notificações do csf";
+echo -e "sorbsdelist\t\t->\tFormulário de delist para a l4.bbfh.ext.sorbs.net";
 echo -e "deepmail\t\t->\tGera um relatório completo do envio de e-mails nas últimas 48H\n";}
 
 
@@ -44,6 +45,7 @@ alias spfxuxu='bash <(curl -ks https://gist.githubusercontent.com/igorhrq/ec9f90
 alias justspam='bash <(curl -ks https://raw.githubusercontent.com/joelsondepaula/joelptmusPrime/main/justspamdelist.sh)'
 alias rotacionamentoip='bash <(curl -ks https://raw.githubusercontent.com/Pablocst/scripts/main/fixedrotacionamento.sh)';
 alias deepmail="perl <(curl -ks 'https://raw.githubusercontent.com/Pablocst/scripts/main/deepmail.pl') --hours=48 root";
+alias sorbsdelist='bash <(curl -ks https://raw.githubusercontent.com/joelsondepaula/joelptmusPrime/main/sorbsdelist.sh);
 
 
 
