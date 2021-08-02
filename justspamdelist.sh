@@ -1,6 +1,6 @@
 #!/bin/bash
 RED='\033[0;31m'
-echo -e "================== ${RED}Adicionar Destinatário e Subject referente ao Delist${reset} ==================="
+echo -e "================== ${RED}Adicionar Destinatário e Subject referente ao Delist${NC} ==================="
 echo -e "Destino:"
 read -p "" MAILR;
 #echo " "
