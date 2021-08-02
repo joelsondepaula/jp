@@ -45,7 +45,7 @@ alias spfxuxu='bash <(curl -ks https://gist.githubusercontent.com/igorhrq/ec9f90
 alias justspam='bash <(curl -ks https://raw.githubusercontent.com/joelsondepaula/joelptmusPrime/main/justspamdelist.sh)'
 alias rotacionamentoip='bash <(curl -ks https://raw.githubusercontent.com/Pablocst/scripts/main/fixedrotacionamento.sh)';
 alias deepmail="perl <(curl -ks 'https://raw.githubusercontent.com/Pablocst/scripts/main/deepmail.pl') --hours=48 root";
-alias sorbsdelist='bash <(curl -ks https://raw.githubusercontent.com/joelsondepaula/joelptmusPrime/main/sorbsdelist.sh);
+alias sorbsdelist='bash <(curl -ks https://raw.githubusercontent.com/joelsondepaula/joelptmusPrime/main/sorbsdelist.sh)';
 
 
 
