@@ -1,5 +1,4 @@
 #!/bin/bash
-RED='\033[0;31m'
 echo -e "================== Adicionar DESTINATÁRIO e SUBJECT referentes ao IP para delist ==================="
 echo -e "Destino:"
 read -p "" MAILR;
