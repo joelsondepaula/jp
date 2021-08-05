@@ -31,9 +31,9 @@ echo -e "spfxuxu\t\t\t->\tRotacionamento de ip by IgorA"
 echo -e "ipsaida\t\t\t->\tMostra o IP de saída de e-mails";
 echo -e "alertroot\t\t->\tDesabilita notificações do csf";
 echo -e "sorbsdelist\t\t->\tFormulário de delist para a l4.bbfh.ext.sorbs.net";
-echo -e "deepmail\t\t->\tGera um relatório completo do envio de e-mails nas últimas 48H\n";
+echo -e "deepmail\t\t->\tGera um relatório completo do envio de e-mails nas últimas 48H";
 echo -e "justspam\t\t->\tSolicitar delist no JustSpam via e-mail (adicionar destinatário e subject retornados no thunderbird)";
-echo -e "testmail\t\t->\tEnviar e-mail de teste para Hotmail e Gmail";} 
+echo -e "testmail\t\t->\tEnviar e-mail de teste para Hotmail e Gmail\n";} 
 
 
 supas;
