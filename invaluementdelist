@@ -1,11 +1,9 @@
 #!/bin/bash
-echo -e "================== Adicionar DESTINATÁRIO e SUBJECT referentes ao IP para delist ==================="
-echo -e "Destino:"
-read -p "" MAILR;
+echo -e "================== AdicionarSUBJECT referente ao IP para delist ==================="
 #echo " "
 echo -e "Subject:"
 read -p "" SUB;
 
-echo "Hello Invaluement team, We already cleaned the account that was abusing on this server, now the queue is normal and everything is fine, may you guys proceed with delist? Thanks in advance!" | mail -s "$SUB" $MAILR
+echo "Hello Invaluement team, We already cleaned the account that was abusing on this server, now the queue is normal and everything is fine, may you guys proceed with delist? Thanks in advance!" | mail -s "$SUB" delist@invaluement.com
 
 echo "Solicitação de delist enviada com sucesso!" 
