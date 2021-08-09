@@ -6,10 +6,10 @@ DOMINIO=$(egrep $USUARIO /etc/trueuserdomains | cut -d: -f1 | tail -1)
 
 uapi --user=$USUARIO Email add_pop email=hdteste password=AdQ9p-mC84567 quota=0 domain=$DOMINIO skip_update_db=1
 
-echo -e "Recipient:\n"
+echo -e "Recipient:"
 read -p " " MAILR;
 #echo " "
-echo -e "Subject:\n"
+echo -e "Subject:"
 read -p " " SUB;
 
 echo -e "Subject: $SUB" | exim -r hdteste@$DOMINIO -v -odf "$MAILR"
