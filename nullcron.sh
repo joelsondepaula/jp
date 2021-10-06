@@ -1,20 +1,6 @@
 #!/bin/bash
 
 
-sed -i 's/ > \/dev\/null 2>\&1//g' /var/spool/cron/*
-
-sed -i '1 ! s/$/ > \/dev\/null 2>\&1/' /var/spool/cron/*
-
-echo "O trecho > \/dev\/null 2>\&1 foi adicionado ao final de todas as crons de contas cPanel presentes neste servidor com sucesso"
-==========
-
-
-
-====O2 (per user)====
-
-#!/bin/bash
-
-
 if [ $# -ne 1 ]; then
   echo -e "Invalid parameter, please use: devnull.sh [ACCOUNT]: \033[0;31m[ERROR]\033[0m"
   exit;
