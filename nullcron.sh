@@ -17,4 +17,4 @@ else
 	sed -i '1 ! s/$/ > \/dev\/null 2>\&1/' /var/spool/cron/$user	
 fi
 
-echo "O trecho "> /dev/null 2>&1" foi adicionado ao final de todas as crons do usuário $user."
+echo "O trecho [> /dev/null 2>&1] foi adicionado ao final de todas as crons do usuário $user."
