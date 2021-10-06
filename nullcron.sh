@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
-  echo -e "Invalid parameter, please use: devnull.sh [ACCOUNT]: \033[0;31m[ERROR]\033[0m"
+  echo -e "Invalid parameter, please use: nullcron.sh [ACCOUNT]: \033[0;31m[ERROR]\033[0m"
   exit;
 else
   user=$1
