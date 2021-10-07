@@ -11,7 +11,7 @@ echo "TesteHDBR" | exim -r root@$HOSTNAME -v -odf testehostdime@hotmail.com &>> 
         if grep -iq "Please contact your Internet service provider since part of their network is on our block list (S3140)" "$archive"; then
 
                 echo "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" | mail -s "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" testehostdime@hotmail.com
-                echo "O servidor está listado na Microsoft SNDS Blocklist e a notificação foi enviada via e-mail"
+         
         else
             	exit;
 
