@@ -13,6 +13,6 @@ echo "TesteHDBR" | exim -r root@$HOSTNAME -v -odf testehostdime@hotmail.com &>> 
                 echo "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" | mail -s "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" testehostdime@hotmail.com
                 echo "O servidor está listado na Microsoft SNDS Blocklist e a notificação foi enviada via e-mail"
         else
-            	echo "erro"
+            	exit;
 
         fi
