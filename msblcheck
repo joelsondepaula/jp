@@ -12,7 +12,7 @@ echo "TesteHDBR" | exim -r root@$HOSTNAME -v -odf testehostdime@hotmail.com &>> 
 
                 body=$(cat msblocklistcheck.txt)
 
-                echo "$body" | mail -s "HostDime Brasil :: O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" hostdimeteste@gmail.com
+                echo "$body" | mail -s "HostDime Brasil :: O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" abuse@hostdime.com.br hostdimeteste@gmail.com
 
         else
             	exit;
