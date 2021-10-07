@@ -4,15 +4,19 @@
 archive='msblocklistcheck.txt'
 ipsaida=$(hostname -i | tr -s " " | cut -f1 -d " ")
 
-
+rm -f msblocklistcheck.txt
 
 echo "TesteHDBR" | exim -r root@$HOSTNAME -v -odf testehostdime@hotmail.com &>> 'msblocklistcheck.txt'
 
         if grep -iq "Please contact your Internet service provider since part of their network is on our block list" "$archive"; then
 
-                echo "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist, verificado através do script "msblcheck"" | mail -s "HostDime Brasil :: O servidor $HOSTNAME de IP "$ipsaida" se encontra listado na Microsoft SNDS Blocklist" abuse@hostdime.com.br hostdimeteste@gmail.com
-         
+                body=$(cat msblocklistcheck.txt)
+
+                echo "$body" | mail -s "HostDime Brasil :: O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" hostdimeteste@gmail.com
+
         else
             	exit;
 
         fi
+        
+rm -f msblocklistcheck.txt
