@@ -10,7 +10,7 @@ echo "TesteHDBR" | exim -r root@$HOSTNAME -v -odf testehostdime@hotmail.com &>> 
 
         if grep -iq "Please contact your Internet service provider since part of their network is on our block list" "$archive"; then
 
-                echo "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist. Verificado através do script "msblcheck"" | mail -s "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" testehostdime@hotmail.com
+                echo "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist, verificado através do script "msblcheck"" | mail -s "O servidor $HOSTNAME de IP "$ipsaida" está listado na Microsoft SNDS Blocklist" abuse@hostdime.com.br
          
         else
             	exit;
