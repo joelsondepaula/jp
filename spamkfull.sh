@@ -15,7 +15,7 @@ if [ score.txt > 500 ]
 
 	then
 
-		 echo "$(cat $archive)" | mail -s "HostDime Brasil :: Possível envio de SPAM partindo do servidor $HOSTNAME de IP $ipsaida" hostdimeteste@gmail.com
+		 echo "$(cat $archive)" | mail -s "HostDime Brasil :: Possível envio de SPAM partindo do servidor $HOSTNAME de IP $ipsaida" hostdimecheck@hotmail.com
 
     else
 
