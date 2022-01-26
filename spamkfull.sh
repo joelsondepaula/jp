@@ -7,6 +7,7 @@ ipsaida=$(hostname -i | tr -s " " | cut -f1 -d " ")
 
 cat /var/log/exim_mainlog | grep "$date" | grep "Sender identification" | awk '{print $8}' |cut -d'=' -f2 | sort | uniq -c |sort -rn | head -20 > retorno.txt
 
+sed -i '/mailnull/d' retorno.txt
 
 cat retorno.txt | head -n1 | awk '{print $1}' > score.txt
 
