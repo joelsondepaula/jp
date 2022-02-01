@@ -38,7 +38,7 @@ if [ "$trigger1" -ge "$trigger10" ]; then
                                 #echo "$(cat $archive)" | mail -s "HostDime Brasil :: Possível envio de SPAM partindo do servidor $HOSTNAME de IP $ipsaida" hostdimecheck@hotmail.com
                                 
                         else
-                            	echo "$trigger1 is less than $trigger10;
+                            	echo "$trigger1 is less than $trigger10"
                 #fi
 fi
 
