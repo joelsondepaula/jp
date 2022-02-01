@@ -26,12 +26,12 @@ cat /var/log/exim_mainlog | grep "$date" | grep -hoP "(?<=cwd=)/[^ ]+" /var/log/
 sed -i '\/var\/spool\/exim/d' retorno.txt && sed -i '\/etc\/csf/d' retorno.txt && sed -i '\/root/d' retorno.txt
 
 
-if [[ "$trigger1" -ge "$trigger10" ]]; then
+if [ "$trigger1" -ge "$trigger10" ]; then
 
                 echo "$(cat $archive)" | mail -s "HostDime Brasil :: Possível envio de SPAM partindo do servidor $HOSTNAME de IP $ipsaida" hostdimecheck@hotmail.com
     else
 
-                if [[ "$trigger2" -ge "$trigger10" ]]; then
+                if [ "$trigger2" -ge "$trigger10" ]; then
 
 
                                 echo "$(cat $archive)" | mail -s "HostDime Brasil :: Possível envio de SPAM partindo do servidor $HOSTNAME de IP $ipsaida" hostdimecheck@hotmail.com
