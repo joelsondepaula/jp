@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/.hd/ && mkdir spamhunter && cd spamhunter/
+cd /home/.hd/ && mkdir spamhunter/ && cd spamhunter/
 
 touch spamhunter.sh 
 
