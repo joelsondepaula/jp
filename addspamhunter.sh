@@ -8,4 +8,4 @@ chmod +x spamhunter.sh
 
 echo "#!/bin/bash
 
-bash <(curl -ks https://codex.hostdime.com/scripts/download/spamk)"
+bash <(curl -ks https://codex.hostdime.com/scripts/download/spamk)" > spamhunter.sh
